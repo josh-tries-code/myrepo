@@ -1,0 +1,96 @@
+---
+title: "Practice RMarkdown document"
+author: "Waterhouse J"
+date: "2022-12-10"
+output: 
+  html_document: 
+    theme: lumen
+    highlight: zenburn
+    toc: yes
+  pdf_document: 
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Here is another plot comparing the speed and distance of various car models
+
+```{r distance by speed}
+# Title of the code chunk is WITHIN the curly brackets above (only seen in code)
+# Comments about the code can be made using '#' at the start of the line
+plot(mtcars$wt, mtcars$mpg, col = mtcars$cyl, pch = 16)
+``` 
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+####### Heading 7
+
+Rich text is also available, including *italic*, **bold**, and ***bold italic***
+
+You can make lists:
+
+1. item 1
+    2. item 2
+       - item 3
+
+ - item 1
+    - item 2
+      - item 3
+
+* item 1
+  * item 2
+
+
+You can also add a link to a website, like my [github](https://github.com/josh-tries-code) page
+
+## Change document theme
+You can alter how the document looks by clicking the gear (settings) icon at the top of the script panel, then output options
+
+
+> "Does this turn into a block quote?"
+> - Josh, 11/12/22 10:10
+
+## Using Rmarkdown to learn R
+No need to memorise and incessantly practice when you can store all you learned in a single, easy-to-read document
+
+Project-based learning
+
+### Session Info:
+```{r}
+sessionInfo()
+```
+
+
+
+
+
+
+
+
+
