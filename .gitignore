@@ -1,0 +1,3 @@
+.Rproj.user
+# ignore all .html files
+*.html
